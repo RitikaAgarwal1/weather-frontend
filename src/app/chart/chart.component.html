@@ -1,0 +1,20 @@
+<form [formGroup]="myForm">
+    <label>Select Date</label>
+    <input type="date" class="form-control" formControlName="currentDate" />
+</form>
+<p>The chart was refreshed on {{refreshTime}}</p>
+
+<!-- Toggling between Line and Bar chart -->
+<ul (click)="toggleGraph($event)">
+    <li data-graph = "line">Line Graph</li>
+    <li data-graph = "bar">Bar Graph</li>
+</ul>
+<div class="chart-container">
+    <h2 class="temp-title">Temperature(F)</h2>
+    <div class="chart-content">
+        <!-- Chart starts here -->
+        <canvas baseChart [data]="data" [options]="options" [type]="lineChartType">
+        </canvas>
+    </div>
+</div>
+<h2 class="time">Time (24 hrs)</h2>

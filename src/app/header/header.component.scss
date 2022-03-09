@@ -1,0 +1,18 @@
+div {
+    background: #333;
+    color: #b9b9b9;
+    height: 10vh;
+    display: flex;
+
+    p {
+        line-height: 10vh;
+        font-size: 20px;
+        font-weight: 600;
+        margin: auto;
+    }
+
+    img {
+        height: -webkit-fill-available;
+        padding: 10px;
+    }
+}

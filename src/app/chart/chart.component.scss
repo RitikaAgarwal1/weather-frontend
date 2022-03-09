@@ -1,0 +1,61 @@
+.chart-container {
+    width: -webkit-fill-available;
+    display: flex;
+
+    .chart-content {
+        width: -webkit-fill-available;
+        padding: 4% 10% 1% 0;
+    }
+    
+    .temp-title {
+        transform: rotate(-90deg);
+        margin: auto;
+        position: relative;
+        left: 4%;
+    }
+
+    canvas {
+        width: 100%;
+    }
+}
+
+.time {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+}
+
+form {
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 10px;
+
+    input {
+        margin-left: 10px;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+
+    li {
+        list-style-type: none;
+        margin: 0 10px;
+        cursor: pointer;
+        border: 1px solid #ff6384;
+        box-shadow: 1px 1px 1px 1px #eaeaea;
+        background: #ffd5d5;
+        padding: 5px;
+
+        &:hover {
+            border-color: #ffd5d5;
+        }
+    }
+}
